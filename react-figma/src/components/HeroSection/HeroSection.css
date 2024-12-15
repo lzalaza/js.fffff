@@ -1,0 +1,37 @@
+.hero-section {
+    background-image: url('../../images/figmimage.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .shop-now-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
