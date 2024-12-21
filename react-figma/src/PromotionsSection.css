@@ -1,0 +1,78 @@
+.promotions {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .promotion-card2 {
+    background: black;
+    color: white;
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+    width: 505px;
+    height: 329px;
+    left: 1000px;
+   
+
+
+  }
+  
+  .promotion-card {
+    background: black;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .promotion-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .promotion-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .promotion-card button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .promotion-card button:hover {
+    background: #ddd;
+  }
+  
+
+  .promotion-card2 h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .promotion-card2 p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .promotion-card2 button {
+    background: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.5s ;
+  }
+  
+  .promotion-card2 button:hover {
+    background: #ddd;
+  }
+  
