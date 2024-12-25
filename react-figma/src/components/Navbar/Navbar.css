@@ -8,12 +8,16 @@
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: heading;
+    color: rgba(29, 29, 29, 1);
   }
   
   .nav-links {
-    
+
+   font-size: 12px;
+   font-weight: 700;
+   margin-right: 700px;
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -28,6 +32,9 @@
     color: black;
   }
   
+
+
+
   .nav-icons {
     display: flex;
     align-items: center;
@@ -56,4 +63,3 @@
     font-size: 0.8rem;
     font-weight: bold;
   }
-  

@@ -1,16 +1,23 @@
 import React from 'react';
 import './Navbar.css';
+import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux'
+
 
 const Navbar = () => {
+  const  ProductCard = useSelector((state) => state.posts.ProductCard)
+
   return (
-    <nav className="navbar">
-      <div className="logo">NorthStar</div>
-      <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+    <header style={{position: 'sticky', top:0 , zIndex: 9}}>
+    <nav className='headercomponent'>
+      <div className='log'><img src="./logo192.png" width="90px"/></div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/cart">Cart</Link></li>
       </ul>
-      <div className="nav-icons">
+       <div className="nav-icons">
         {/* User Icon */}
         <i className="fa fa-user"></i>
 
@@ -24,8 +31,17 @@ const Navbar = () => {
         <i className="fa fa-bars"></i>
       </div>
     </nav>
-  );
+    </header>
+  )
 };
 
 export default Navbar;
-
+<nav className="navbar">
+      <div className="logo">NorthStar</div>
+      <ul className="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+     
+    </nav>
