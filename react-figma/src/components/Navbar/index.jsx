@@ -1,47 +1,70 @@
-import React from 'react';
 import './Navbar.css';
-import {Link} from 'react-router-dom';
-import { useSelector } from 'react-redux'
-
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import logo from '../../images/logo.png';
+import user from '../../images/logo.png';
+import cart from '../../images/logo3.png';
+import menu from '../../images/logo2.png';
+import React, { useState } from 'react';
 
 const Navbar = () => {
-  const  ProductCard = useSelector((state) => state.posts.ProductCard)
+  // Use safe selector
+  const cartItems = useSelector((state) => state.users?.cartItems || []);
+  const [showCartDropdown, setShowCartDropdown] = useState(false);
+
+  const navigate = useNavigate();
+  const handleCartClick = () => {
+    navigate('/cart');
+  };
 
   return (
-    <header style={{position: 'sticky', top:0 , zIndex: 9}}>
-    <nav className='headercomponent'>
-      <div className='log'><img src="./logo192.png" width="90px"/></div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/cart">Cart</Link></li>
-      </ul>
-       <div className="nav-icons">
-        {/* User Icon */}
-        <i className="fa fa-user"></i>
-
-        {/* Cart Icon with Badge */}
-        <div className="cart-container">
-          <i className="fa fa-shopping-cart"></i>
-          <span className="cart-badge">10</span>
-        </div>
-
-        {/* Menu Icon */}
-        <i className="fa fa-bars"></i>
+    <div className="header">
+      
+      <div className="logo">NorthStar</div>
+      <div className="nav-links">
+        <ul>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="/about">ABOUT</Link></li>
+          <li><Link to="/contact">CONTACT US</Link></li>
+        </ul>
       </div>
-    </nav>
-    </header>
-  )
+
+      <div className="allicons">
+        <div className="user">
+          <img src={user} alt="User" />
+        </div>
+        <div
+          className="cartIcon"
+          onClick={() => setShowCartDropdown((prev) => !prev)}
+          
+          aria-label="View Cart"
+        >
+          <img src={cart} alt="Cart" />
+          <span className="carti">{cartItems.length}</span>
+        </div>
+        <div className="sideMenu">
+          <img src={menu} alt="Menu" />
+        </div>
+      </div>
+
+      {showCartDropdown && (
+        <div className="navbcart">
+          <h3>Cart Items</h3>
+          {cartItems.length > 0 ? (
+            <ul>
+              {cartItems.map((item, index) => (
+                <li key={index}>
+                  {item.title} - {item.quantity}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>There is nothing in your Cart.</p>
+          )}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default Navbar;
-<nav className="navbar">
-      <div className="logo">NorthStar</div>
-      <ul className="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-      </ul>
-     
-    </nav>

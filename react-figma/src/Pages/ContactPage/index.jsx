@@ -1,12 +1,12 @@
 import React from "react";
-import { useSelector } from 'react-redux'
+import './contact.css';
 
 export const ContactPage = () =>{
-    const posts = useSelector(state => state.posts);
-    console.log(posts)
 
     return(
-        <div>ContactPage</div>
+        <div className='wtcp'>
+     <h2>!WELCOME TO YOUR CONTACT PAGE!</h2>
+    </div>
     )
 }
 

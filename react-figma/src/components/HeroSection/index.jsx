@@ -1,7 +1,9 @@
 import React from 'react';
 import './HeroSection.css';
+import { useSelector } from 'react-redux';
 
 const HeroSection = () => {
+  const products = useSelector((state) => state.products);
   return (
     <div className="hero-section">
       <div className="hero-content">

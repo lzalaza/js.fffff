@@ -43,21 +43,87 @@ footer {
 .footer-columns .column ul {
   text-align: left;
   list-style: none;
-  padding: 0px;
+  padding: 10px;
   color: rgba(29, 29, 29, 1);
 }
 .footer-bottom {
   text-align:left;
   font-size: 0.9rem;
-  color: #666;
+  color: rgba(29, 29, 29, 1);
+}
+.foot-bottom{
+  color: rgba(29, 29, 29, 1);
+  text-align:left;
+  font-size: 0.9rem;
+  
+
 }
 .payment-icons img {
   width: 60px;
   margin-right: 10px;
- 
+  
 }
 
+
+.payment-icons{
+  margin-left: 1150Px;
+  
+}
 .alll{
     background-color: rgba(251, 251, 251, 1);
 }
 
+.payt {
+ display: grid;
+  border: 1px solid rgba(232, 232, 232, 1)
+  
+
+}
+
+.getemail{
+  margin-right: 50px;
+font-size: 12px;
+font-weight: 700;
+line-height: 13.8px;
+letter-spacing: 0.05em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  width: 295px;
+  height: 48px;
+  top: 110px;
+  left: 1008px;
+  gap: 0px;
+  opacity: 0px;
+  color: rgba(85, 85, 85, 1);
+  border: px solid rgba(29, 29, 29, 1)
+}
+
+.getema{
+  width: 50px;
+  height: 50px;
+  top: 110px;
+  left: 1255px;
+  gap: 0px;
+  opacity: 0px;
+  
+
+  color: rgba(85, 85, 85, 1);
+}
+
+.getem{
+  width: 200px;
+  height: 48px;
+  top: 110px;
+  left: 1008px;
+  gap: 0px;
+  opacity: 0px;
+  
+  
+}
+
+.column li{
+  text-decoration: none;
+  color: rgba(29, 29, 29, 1);
+}

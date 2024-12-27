@@ -1,0 +1,11 @@
+.wta{
+    font-family: Lato;
+    color: rgb(21, 21, 21);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}

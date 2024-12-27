@@ -1,27 +1,27 @@
 .product-card {
-    text-align: center;
-    margin: 1rem;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .product-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    width: 295px;
-    height: 342px;
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-  }
-  
-  .product-name {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-  
-  .product-price {
-    font-size: 1.2rem;
-    color: #004680; /* Dark blue */
-    margin-bottom: 1rem;
-  }
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  width: 295px;
+  height: 342px;
+
+}
+
+.product-name {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #004680; /* Dark blue */
+  margin-bottom: 1rem;
+}
   
